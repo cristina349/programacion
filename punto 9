@@ -1,0 +1,16 @@
+/*
+Hacer un programa para ingresar tres números y listar el máximo de ellos
+*/
+
+#include <iostream>
+using namespace std;
+int main (){
+    int n1, n2, n3, max;
+    cout << "Ingrese tres numeros: "<< endl;
+    cin >> n1 >> n2 >> n3;
+    max = n1;
+    if (n2 > max) {max = n2;} if(n3 > max) {max = n3;}
+    cout << "El maximo es: " << max << endl;
+  
+  
+}
