@@ -1,0 +1,36 @@
+/*
+Hacer un programa para ingresar cinco números y listar el máximo y el mínimo
+de ellos
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n1, n2, n3, n4, n5;
+    int mini, maxi;
+
+    cout << "Ingrese cinco numeros: " << endl;
+    cin >> n1 >> n2 >> n3 >> n4 >> n5;
+
+    // Inicializamos con el primero
+    mini = n1;
+    maxi = n1;
+
+    // Comparamos de a uno, se puede simplificar pero haci queda mas prolijo pero lleva mas tiempo
+    if (n2 > maxi) {maxi = n2;}
+    if (n2 < mini) {mini = n2;}
+
+    if (n3 > maxi) {maxi = n3;}
+    if (n3 < mini) {mini = n3;}
+
+    if (n4 > maxi) {maxi = n4;}
+    if (n4 < mini) {mini = n4;}
+      
+    if (n5 > maxi) {maxi = n5;}
+    if (n5 < mini) {mini = n5;}
+
+    cout << "El maximo es: " << maxi << endl;
+    cout << "El minimo es: " << mini << endl;
+
+}
