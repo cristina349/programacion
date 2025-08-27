@@ -1,0 +1,52 @@
+/*
+Hacer un programa para ingresar tres números diferentes y determinar e
+informar el número del medio.
+Sugerimos probar CADA UNA de las siguientes 6 combinaciones.
+N1=8, N2=6, N3=10. Valor del medio: 8. N1=8, N2=10, N3=6. Valor del medio: 8
+N1=6, N2=8, N3=10. Valor del medio: 8. N1=10, N2=8, N3=6. Valor del medio: 8
+N1=6, N2=10, N3=8. Valor del medio: 8. N1=10, N2=6, N3=8. Valor del medio: 8
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n1, n2, n3;
+    int maxi, mini, medio;
+
+    cout << "Ingrese tres numeros diferentes: " << endl;
+    cin >> n1 >> n2 >> n3;
+
+    
+    maxi = n1;
+    mini = n1;
+
+    
+    if (n2 > maxi) {
+        maxi = n2;
+    }
+    if (n3 > maxi) {
+        maxi = n3;
+    }
+
+   
+    if (n2 < mini) {
+        mini = n2;
+    }
+    if (n3 < mini) {
+        mini = n3;
+    }
+
+    // El medio es el que no es ni el max ni el min
+    if (n1 != maxi && n1 != mini) {
+        medio = n1;
+    } else if (n2 != maxi && n2 != mini) {
+        medio = n2;
+    } else {
+        medio = n3;
+    }
+
+    cout << "El numero del medio es: " << medio << endl;
+
+   
+}
