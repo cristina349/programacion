@@ -1,0 +1,32 @@
+/*Un negocio de perfumería efectúa descuentos según el importe de la venta.
+Si el importe es menor a $100 aplicar un descuento del 5%
+Si el importe es entre $100 y hasta $500 aplicar un descuento del 10%
+Si el importe es mayor a $500 aplicar un descuento del 15%
+*/
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    float importe, descuento, total;
+
+    cout << "Ingrese el importe de la venta: ";
+    cin >> importe;
+
+    if (importe < 100) {
+        descuento = (importe * 5) / 100;
+    } 
+    else if (importe > 500) {
+        descuento = (importe * 15) / 100;
+    } 
+    else { // entre 100 y 500 inclusive
+        descuento = (importe * 10) / 100;
+    }
+
+    total = importe - descuento;
+
+    cout << "El descuento es de: $" << descuento << endl;
+    cout << "El importe final a pagar es: $" << total << endl;
+
+    return 0;
+}
