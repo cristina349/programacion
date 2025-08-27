@@ -1,0 +1,19 @@
+/*Hacer un programa para ingresar por teclado dos números y luego informar por
+pantalla con un cartel aclaratorio si el primer número es múltiplo del segundo.
+*/
+
+#include <iostream>
+using namespace std;
+int main () {
+  int num1,num2,multiplo;
+  cout << "Ingrese un numero: ";
+  cin >> num1;
+  cout << "Ingrese otro numero: ";
+  cin >> num2;
+
+multiplo =num1/num2;
+
+  if(multiplo==0){cout<<"el numero es multiplo";}else{cout <<"el numero no es multiplo";}
+  
+
+}
