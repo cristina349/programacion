@@ -1,0 +1,55 @@
+/*
+Hacer un programa para ingresar tres números distintos y listarlos ordenados
+de menor a mayor.
+Sugerimos probar CADA UNA de las siguientes 6 combinaciones.
+Si N1=8, N2=6, N3=10 ó N1=8, N2=10, N3=6. Se muestra: 6, 8, 10.
+Si N1=6, N2=8, N3=10 ó N1=10, N2=8, N3=6. Se muestra: 6, 8, 10.
+Si N1=6, N2=10, N3=8 ó N1=10, N2=6, N3=8. Se muestra: 6, 8, 10.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n1, n2, n3;
+    cout << "Ingrese un numero: ";
+    cin >> n1;
+    cout << "Ingrese otro numero: ";
+    cin >> n2;
+    cout << "Ingrese otro numero: ";
+    cin >> n3;
+
+    int maxi, medio, mini;
+    maxi = n1;
+    mini = n1;
+
+   
+    if (n2 > maxi) {
+        maxi = n2;
+    }
+    if (n3 > maxi) {
+        maxi = n3;
+    }
+
+    
+    if (n2 < mini) {
+        mini = n2;
+    }
+    if (n3 < mini) {
+        mini = n3;
+    }
+
+    
+    if (n1 > mini && n1 < maxi) {
+        medio = n1;
+    } else if (n2 > mini && n2 < maxi) {
+        medio = n2;
+    } else {
+        medio = n3;   
+    }
+
+    cout << "El orden de los numeros es: " << mini << ", " << medio << ", " << maxi << endl;
+
+   
+}
+
