@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main (){
+   
+    //promedio
+    int n1=7, n2=2, n3=8;
+    float promedio;
+    //sumamos todos los elementos y dividimos esa suma  por la cantidad de elementos que usamos
+    promedio =((float)n1+n2+n3)/3;
+    cout<<"el promedio es: "<<promedio;
+
+   --------------------------------------------------------------------------------------
+
+    #include <iostream>
+using namespace std;
+int main (){
+
+    //porsentaje
+    //calcular el porcentaje de protones,neutrones,electrones del atamo
+    int protones=7,neutrones=2,electrones=8;
+    int total;
+    float porcentaje;
+
+    total= protones+neutrones+electrones;
+    protones=((float)protones*100)/total;
+    neutrones=((float)neutrones*100)/total;
+    electrones=((float)electrones*100)/total;
+
+    cout<<"el porcentaje de protones es: "<<protones<<"%"<<endl;
+    cout<<"el porcentaje de neutrones es: "<<neutrones<<"&"<<endl;
+    cout<<"el porcentaje de electrones es: "<<electrones<<"%"<<endl;
+
+
+
+
+
+}
